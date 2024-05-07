@@ -1,42 +1,26 @@
 import { useEffect } from "react";
+import Marker from './Marker';
 const { kakao } = window;
 
 export default function Map() {
 
     useEffect(()=>{
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                let lat = position.coords.latitude,
-                    lon = position.coords.longitude;
+        let container = document.getElementById('map');
+        let lat = 33.513424, lng = 126.508846;
 
-                let container = document.getElementById('map');
+        let options = {
+            center: new kakao.maps.LatLng(lat, lng),
+            level: 3
+        };
+        let map = new kakao.maps.Map(container, options);
 
-                let options = {
-                    center: new kakao.maps.LatLng(lat, lon),
-                    level: 3
-                };
-
-                let map = new kakao.maps.Map(container, options);
-
-                var marker = new kakao.maps.Marker({
-                    map: map, 
-                    position: options.center,
-                });
-
-                var infowindow = new kakao.maps.InfoWindow({
-                    content : "현위치",
-                    removable : true
-                });
-
-                infowindow.open(map, marker);
-            })
-        }
+        let mk = Marker(map, lat, lng, '');
     }, [])
     
     
     return (
         <div>
-            <div id="map" style={{width:"500px", height:"400px"}}></div> 
+            <div id="map" style={{width:"100vw", height:"100vh"}}></div>
         </div>
     )
 }
