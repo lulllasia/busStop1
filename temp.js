@@ -9,7 +9,6 @@ const BusStop = require('./DATA/BusStop.json');
 //console.log(DATA);
 
 // fs.readFile(path.join(__dirname, "temp2.csv"), "utf-8", (err, data) => {
-
 //     const rows = data.toString().split("\n").slice(1);
 //     const Data = {};
 //     rows.forEach(e => {
@@ -21,7 +20,6 @@ const BusStop = require('./DATA/BusStop.json');
 //             around : temp[4],
 //         }
 //     });
-
 //     fs.writeFile(path.join(__dirname, "BSdata2.json"), JSON.stringify(Data), err => {
 //         if(!err) console.log("SUCCESS");
 //         else console.log(err);
@@ -34,13 +32,6 @@ const ERR = err => {
     }
     else console.log(err);
 }
-
-function sleep(ms) {
-    const wakeUpTime = Date.now() + ms;
-    while (Date.now() < wakeUpTime) {}
-    console.log('waked up');
-}
-
 
 if(!fs.existsSync(path.join(__dirname,"DATA", "Nosun.json"))){
     fetch("http://bus.jeju.go.kr/api/searchBusRouteList.do")
@@ -163,7 +154,7 @@ else {
             fetch(`https://bus.jeju.go.kr/api/searchArrivalInfoList.do?station_id=${e}`)
             .then( res => res.json())
             .then(res => {
-                const arriving = res.filter(E => E.REMAIN_STATION <= 1 && E.PREDICT_TRAV_TM <= 2);
+                const arriving = res.filter(E => E.REMAIN_STATION <= 1 && E.PREDICT_TRAV_TM <= 3);
                 console.log(arriving);
                 arriving.map(e=>e.ROUTE_ID).forEach(E => {
                     let temp = BS[e].Route[E].arriving[DATE];
@@ -179,7 +170,7 @@ else {
         n = (n+intvl) % 4147;
         //console.log(BS);
         fs.writeFile(path.join(__dirname, "DATA", "TEMPDATA.json"), JSON.stringify(BS), ERR);
-    }, 2000);
+    }, 1500);
 }
 console.log(Object.keys(BSDATA2).length);
 console.log(Object.keys(DATA2).length);
