@@ -55,3 +55,28 @@ body {
   justify-content: center;
   line-height : 30px;
 }
+
+.navbar {
+  background-color: #22AADD;
+  padding: 10px;
+  height: 40px; 
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.navlist {
+  /* 수평 배치 */
+  color : #EFEFEF;
+  font-size : 130%;
+  font-weight : 700;
+  float: left;
+  padding-left :1%;
+  margin-Left: 1%;
+  text-decoration: none;
+}
+
+.modalChild {
+  display : flex;
+  flex-direction: column;
+}

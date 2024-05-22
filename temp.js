@@ -6,25 +6,40 @@ const BSDATA = require('./DATA/BSdata1.json');
 const BSDATA2 = require('./DATA/BS.json');
 const BSDATA3 = require('./DATA/BSdata2.json');
 const BusStop = require('./DATA/BusStop.json');
+const TEMPDATA = require('./DATA/TEMPDATA.json');
+const TEMPDATA2 = require('./DATA/TEMPDATA2.json');
+const TEMPDATA1 = require('./DATA/TEMPDATA1.json');
+const { dir } = require('console');
 //console.log(DATA);
 
-// fs.readFile(path.join(__dirname, "temp2.csv"), "utf-8", (err, data) => {
-//     const rows = data.toString().split("\n").slice(1);
-//     const Data = {};
-//     rows.forEach(e => {
-//         const temp = e.split(",");
-//         Data[temp[0]] = {
-//             BSname : temp[1],
-//             lat : temp[2],
-//             lng : temp[3],
-//             around : temp[4],
-//         }
-//     });
-//     fs.writeFile(path.join(__dirname, "BSdata2.json"), JSON.stringify(Data), err => {
-//         if(!err) console.log("SUCCESS");
-//         else console.log(err);
-//     });
-// })
+fs.readFile(path.join(__dirname, "DATA", "temp2.csv"), "utf-8", (err, data) => {
+    const rows = data.toString().split("\n").slice(1);
+    const Data = {};
+    rows.forEach(e => {
+        const temp = e.split(/,/);
+        let k1=0, k2=0;
+        temp.forEach((e, i) => {
+            if(e[0] === "\""){
+                k1 = i;
+            }
+            else if(e[e.length-1] === "\""){
+                k2 = i;
+            }
+        })
+        const k = temp.splice(k1, k2-k1, temp.filter((e,i) => i>=k1 && i<=k2).join(",").match(/[^\"]*/g)[0]);
+        if(k.length > 0)console.log(temp);
+        Data[temp[0]] = {
+            BSname : temp[2],
+            lat : temp[4],
+            lng : temp[3],
+            around : temp[5],
+        }
+    });
+    fs.writeFile(path.join(__dirname,"DATA",  "BSdata3.json"), JSON.stringify(Data), err => {
+        if(!err) console.log("SUCCESS");
+        else console.log(err);
+    });
+})
 
 const ERR = err => {
     if(!err) {
@@ -136,9 +151,9 @@ else if(0 && !fs.existsSync(path.join(__dirname, "DATA", "BusStopArriving.json")
     
     //fs.writeFile(path.join(__dirname, "DATA", "BusStop.json"), JSON.stringify(BS), ERR);
 }
-else {
-    const BS = {...BusStop};
-    const DATE = JSON.stringify(new Date()).match(/\d+-\d+-\d+/)[0];
+else if(0){
+    const BS = {...TEMPDATA};
+    let DATE = JSON.stringify(new Date()).match(/\d+-\d+-\d+/)[0];
     console.log(DATE);
     let n = 0;
     let intvl = 29;
@@ -149,6 +164,15 @@ else {
         });
     });
     setInterval(() => {
+        if(DATE !== JSON.stringify(new Date()).match(/\d+-\d+-\d+/)[0]){
+            DATE = JSON.stringify(new Date()).match(/\d+-\d+-\d+/)[0];
+            Object.keys(BS).forEach(e => {
+                Object.keys(BS[e].Route).forEach(E => {
+                    if(BS[e].Route[E].arriving[DATE] === undefined) BS[e].Route[E].arriving[DATE] = [];
+                    //console.log(BS[e].Route[E].arriving[DATE]);
+                });
+            });
+        }
         Object.keys(BS).filter((_,i) => i < intvl+n && i >= n).forEach((e,i) => {
             console.log(e);
             fetch(`https://bus.jeju.go.kr/api/searchArrivalInfoList.do?station_id=${e}`)
@@ -159,7 +183,7 @@ else {
                 arriving.map(e=>e.ROUTE_ID).forEach(E => {
                     let temp = BS[e].Route[E].arriving[DATE];
                     const now = new Date();
-                    if(temp.length === 0 || now - temp.at(-1) > 5 * 60 * 1000) {
+                    if(temp.length === 0 || now - temp.at(-1) > 3 * 60 * 1000) {
                         BS[e].Route[E].arriving[DATE].push(now);
                         console.log(now);
                     }
@@ -170,7 +194,33 @@ else {
         n = (n+intvl) % 4147;
         //console.log(BS);
         fs.writeFile(path.join(__dirname, "DATA", "TEMPDATA.json"), JSON.stringify(BS), ERR);
-    }, 1500);
+    }, 2000);
+}
+else if(1) {
+    const BS = {...TEMPDATA1};
+    let count = 0;
+    for(let i in BS) {
+        if(Number.isNaN(Number(BS[i].lat)) || Number.isNaN(Number(BS[i].lng))){
+            console.log(BS[i], ++count);
+
+        }
+    }
+}
+else {
+    const BS = {...TEMPDATA};
+    Object.keys(BS).forEach(e => {
+        console.log(BS[e].Route);
+        Object.keys(BS[e].Route).forEach(E => {
+            Array.from(new Set(Object.keys(BS[e].Route[E].arriving).concat(Object.keys(TEMPDATA2[e].Route[E].arriving)))).sort().map(k => {
+                const k1 = TEMPDATA[e].Route[E].arriving[k];
+                const k2 = TEMPDATA2[e].Route[E].arriving[k];
+                BS[e].Route[E].arriving[k] = (k1 !== undefined ? k1.filter(e => e.match(RegExp(k, 'g')) !== null) : [])
+                                        .concat(k2 !== undefined ? k2.filter(e => e.match(RegExp(k, 'g')) !== null) : []);
+            });
+            console.log(e);
+        });
+    });
+    fs.writeFile(path.join(__dirname, "DATA", "TEMPDATA1.json"), JSON.stringify(BS), ERR);
 }
 console.log(Object.keys(BSDATA2).length);
 console.log(Object.keys(DATA2).length);
