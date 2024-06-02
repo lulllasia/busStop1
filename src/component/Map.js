@@ -1,12 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import Marker from './Marker';
+import Routes from '../Data/Routes.json';
+import Context from '../context/Context.js';
 const { kakao } = window;
 
 export default function Map() {
+    const { shortest, setShortest, startingPoint, setStartingPoint, endPoint, setEndPoint } = useContext(Context);
 
     useEffect(()=>{
-        let container = document.getElementById('map');
         let lat = 33.513424, lng = 126.508846;
+
+        let container = document.getElementById('map');
 
         let options = {
             center: new kakao.maps.LatLng(lat, lng),
@@ -14,8 +18,23 @@ export default function Map() {
         };
         let map = new kakao.maps.Map(container, options);
 
-        let mk = Marker(map, lat, lng, '');
-    }, [])
+
+
+        console.log(shortest);
+        if(shortest && shortest.Station.length > 0){
+            let lats = [], lngs = [], mk = [];
+            shortest.Station.forEach((e,i) => {
+                console.log(e);
+                console.log(Routes[e].lat)
+                lats.push(Routes[e].lat);
+                lngs.push(Routes[e].lng);
+                mk[i] = Marker(map, lats[i], lngs[i], e.toString());
+            })
+            
+        }
+
+        //let mk = Marker(map, lat, lng, '');
+    }, [shortest])
     
     
     return (

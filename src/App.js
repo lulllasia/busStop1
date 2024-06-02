@@ -6,13 +6,13 @@ import Navbar from './component/Navbar.js';
 import Context from './context/Context.js';
 
 function App() {
-  const [callModal, setCallModal] = useState(false);
+  const [shortest, setShortest] = useState(null);
   const [startingPoint, setStartingPoint] = useState('');
   const [endPoint, setEndPoint] = useState('');
 
   return (
     <Context.Provider value={{
-        callModal, setCallModal, 
+        shortest, setShortest, 
         startingPoint, setStartingPoint,
         endPoint, setEndPoint,
       }}>

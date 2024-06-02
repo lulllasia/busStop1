@@ -1,0 +1,2601 @@
+{
+    "ret": [
+        {
+            "405131202": {
+                "st": 405000516,
+                "end": 405000207,
+                "tf": [
+                    {
+                        "405327001": {
+                            "st": 405000459,
+                            "end": 405000207,
+                            "tf": null,
+                            "depth": 0,
+                            "arriveTimeInStStation": [],
+                            "arriveTimeInEndStation": []
+                        }
+                    }
+                ],
+                "depth": 1,
+                "arriveTimeInStStation": [
+                    {
+                        "ARRV_STATION_ID": 405000516,
+                        "ROUTE_SUB_NM": "한라수목원",
+                        "VH_ID": 7983619,
+                        "ROUTE_ID": 405131202,
+                        "ROUTE_NUM": "312",
+                        "PLATE_NO": "제주79아3619",
+                        "CURR_STATION_ID": 405000373,
+                        "PREDICT_TRAV_TM": 5,
+                        "REMAIN_STATION": 2,
+                        "CURR_STATION_NM": "월랑마을 남녕고등학교",
+                        "LOW_PLATE_TP": "N"
+                    }
+                ]
+            }
+        },
+        {
+            "405136002": {
+                "st": 405000516,
+                "end": 405000207,
+                "tf": [
+                    {
+                        "405327001": {
+                            "st": 405000461,
+                            "end": 405000207,
+                            "tf": null,
+                            "depth": 0,
+                            "arriveTimeInStStation": [],
+                            "arriveTimeInEndStation": []
+                        }
+                    }
+                ],
+                "depth": 1,
+                "arriveTimeInStStation": [
+                    {
+                        "ARRV_STATION_ID": 405000516,
+                        "ROUTE_SUB_NM": "부영아파트",
+                        "VH_ID": 7997028,
+                        "ROUTE_ID": 405136002,
+                        "ROUTE_NUM": "360",
+                        "PLATE_NO": "제주79자7028",
+                        "CURR_STATION_ID": 405000189,
+                        "PREDICT_TRAV_TM": 10,
+                        "REMAIN_STATION": 5,
+                        "CURR_STATION_NM": "제원아파트",
+                        "LOW_PLATE_TP": "N"
+                    }
+                ]
+            }
+        },
+        {
+            "405136521": {
+                "st": 405000516,
+                "end": 405000207,
+                "tf": [
+                    {
+                        "405243701": {
+                            "st": 405000462,
+                            "end": 405000207,
+                            "tf": [
+                                {
+                                    "405327001": {
+                                        "st": 405000492,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405327001": {
+                                        "st": 405000495,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405327001": {
+                                        "st": 405000497,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000076,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000163,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000145,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                }
+                            ],
+                            "depth": 1,
+                            "arriveTimeInStStation": [
+                                {
+                                    "ARRV_STATION_ID": 405000462,
+                                    "ROUTE_SUB_NM": "한라도서관",
+                                    "VH_ID": 7983429,
+                                    "ROUTE_ID": 405243701,
+                                    "ROUTE_NUM": "437",
+                                    "PLATE_NO": "제주79아3429",
+                                    "CURR_STATION_ID": 405000192,
+                                    "PREDICT_TRAV_TM": 7,
+                                    "REMAIN_STATION": 6,
+                                    "CURR_STATION_NM": "은남동",
+                                    "LOW_PLATE_TP": "N"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "405243701": {
+                            "st": 405000460,
+                            "end": 405000207,
+                            "tf": [
+                                {
+                                    "405327001": {
+                                        "st": 405000495,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405327001": {
+                                        "st": 405000497,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000076,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000163,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000145,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                }
+                            ],
+                            "depth": 1,
+                            "arriveTimeInStStation": [
+                                {
+                                    "ARRV_STATION_ID": 405000460,
+                                    "ROUTE_SUB_NM": "한라도서관",
+                                    "VH_ID": 7983429,
+                                    "ROUTE_ID": 405243701,
+                                    "ROUTE_NUM": "437",
+                                    "PLATE_NO": "제주79아3429",
+                                    "CURR_STATION_ID": 405000192,
+                                    "PREDICT_TRAV_TM": 8,
+                                    "REMAIN_STATION": 7,
+                                    "CURR_STATION_NM": "은남동",
+                                    "LOW_PLATE_TP": "N"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "405243701": {
+                            "st": 405000458,
+                            "end": 405000207,
+                            "tf": [
+                                {
+                                    "405327001": {
+                                        "st": 405000495,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405327001": {
+                                        "st": 405000497,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000163,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000145,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                }
+                            ],
+                            "depth": 1,
+                            "arriveTimeInStStation": [
+                                {
+                                    "ARRV_STATION_ID": 405000458,
+                                    "ROUTE_SUB_NM": "한라도서관",
+                                    "VH_ID": 7983429,
+                                    "ROUTE_ID": 405243701,
+                                    "ROUTE_NUM": "437",
+                                    "PLATE_NO": "제주79아3429",
+                                    "CURR_STATION_ID": 405000192,
+                                    "PREDICT_TRAV_TM": 9,
+                                    "REMAIN_STATION": 8,
+                                    "CURR_STATION_NM": "은남동",
+                                    "LOW_PLATE_TP": "N"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "depth": 2,
+                "arriveTimeInStStation": [
+                    {
+                        "ARRV_STATION_ID": 405000516,
+                        "ROUTE_SUB_NM": "제주한라대학교(종점)",
+                        "VH_ID": 7997031,
+                        "ROUTE_ID": 405136521,
+                        "ROUTE_NUM": "365",
+                        "PLATE_NO": "제주79자7031",
+                        "CURR_STATION_ID": 405000613,
+                        "PREDICT_TRAV_TM": 2,
+                        "REMAIN_STATION": 1,
+                        "CURR_STATION_NM": "원노형마을",
+                        "LOW_PLATE_TP": "N"
+                    }
+                ]
+            }
+        },
+        {
+            "405131202": {
+                "st": 405000516,
+                "end": 405000207,
+                "tf": [
+                    {
+                        "405327001": {
+                            "st": 405000459,
+                            "end": 405000207,
+                            "tf": [
+                                {
+                                    "405134102": {
+                                        "st": 405002045,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405002045,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134102": {
+                                        "st": 405000136,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000136,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134102": {
+                                        "st": 405000128,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000128,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135521": {
+                                        "st": 405000126,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134102": {
+                                        "st": 405000126,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000126,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135521": {
+                                        "st": 405000124,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134102": {
+                                        "st": 405000124,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135601": {
+                                        "st": 405000124,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134202": {
+                                        "st": 405000120,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135521": {
+                                        "st": 405000120,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134102": {
+                                        "st": 405000120,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134202": {
+                                        "st": 405000118,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135521": {
+                                        "st": 405000118,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134102": {
+                                        "st": 405000118,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405247506": {
+                                        "st": 405000214,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135102": {
+                                        "st": 405000214,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134202": {
+                                        "st": 405000214,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135521": {
+                                        "st": 405000214,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134102": {
+                                        "st": 405000214,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405247506": {
+                                        "st": 405000211,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135102": {
+                                        "st": 405000211,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134202": {
+                                        "st": 405000211,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135521": {
+                                        "st": 405000211,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134102": {
+                                        "st": 405000211,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405247506": {
+                                        "st": 405000209,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135102": {
+                                        "st": 405000209,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405134202": {
+                                        "st": 405000209,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                },
+                                {
+                                    "405135521": {
+                                        "st": 405000209,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0
+                                    }
+                                }
+                            ],
+                            "depth": 1,
+                            "arriveTimeInStStation": []
+                        }
+                    }
+                ],
+                "depth": 2,
+                "arriveTimeInStStation": [
+                    {
+                        "ARRV_STATION_ID": 405000516,
+                        "ROUTE_SUB_NM": "한라수목원",
+                        "VH_ID": 7983619,
+                        "ROUTE_ID": 405131202,
+                        "ROUTE_NUM": "312",
+                        "PLATE_NO": "제주79아3619",
+                        "CURR_STATION_ID": 405000373,
+                        "PREDICT_TRAV_TM": 5,
+                        "REMAIN_STATION": 2,
+                        "CURR_STATION_NM": "월랑마을 남녕고등학교",
+                        "LOW_PLATE_TP": "N"
+                    }
+                ]
+            }
+        },
+        {
+            "405136002": {
+                "st": 405000516,
+                "end": 405000207,
+                "tf": [
+                    {
+                        "405132001": {
+                            "st": 405000459,
+                            "end": 405000207,
+                            "tf": [
+                                {
+                                    "405134606": {
+                                        "st": 405000267,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [
+                                            {
+                                                "ARRV_STATION_ID": 405000267,
+                                                "ROUTE_SUB_NM": "영주고등학교",
+                                                "VH_ID": 7983472,
+                                                "ROUTE_ID": 405134606,
+                                                "ROUTE_NUM": "346",
+                                                "PLATE_NO": "제주79아3472",
+                                                "CURR_STATION_ID": 405000483,
+                                                "PREDICT_TRAV_TM": 31,
+                                                "REMAIN_STATION": 24,
+                                                "CURR_STATION_NM": "제주동중학교",
+                                                "LOW_PLATE_TP": "N"
+                                            }
+                                        ],
+                                        "arriveTimeInEndStation": []
+                                    }
+                                }
+                            ],
+                            "depth": 1,
+                            "arriveTimeInStStation": [
+                                {
+                                    "ARRV_STATION_ID": 405000459,
+                                    "ROUTE_SUB_NM": "화북휴먼시아정문",
+                                    "VH_ID": 7997016,
+                                    "ROUTE_ID": 405132001,
+                                    "ROUTE_NUM": "320",
+                                    "PLATE_NO": "제주79자7016",
+                                    "CURR_STATION_ID": 405000060,
+                                    "PREDICT_TRAV_TM": 20,
+                                    "REMAIN_STATION": 14,
+                                    "CURR_STATION_NM": "일우 한란 아파트",
+                                    "LOW_PLATE_TP": "N"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "405132001": {
+                            "st": 405000461,
+                            "end": 405000207,
+                            "tf": [
+                                {
+                                    "405134603": {
+                                        "st": 405001518,
+                                        "end": 405000207,
+                                        "tf": null,
+                                        "depth": 0,
+                                        "arriveTimeInStStation": [
+                                            {
+                                                "ARRV_STATION_ID": 405001518,
+                                                "ROUTE_SUB_NM": "영주고등학교",
+                                                "VH_ID": 7983473,
+                                                "ROUTE_ID": 405134603,
+                                                "ROUTE_NUM": "346",
+                                                "PLATE_NO": "제주79아3473",
+                                                "CURR_STATION_ID": 405002524,
+                                                "PREDICT_TRAV_TM": 45,
+                                                "REMAIN_STATION": 35,
+                                                "CURR_STATION_NM": "영주고 입구",
+                                                "LOW_PLATE_TP": "N"
+                                            }
+                                        ],
+                                        "arriveTimeInEndStation": [
+                                            {
+                                                "ARRV_STATION_ID": 405000207,
+                                                "ROUTE_SUB_NM": "영주고등학교",
+                                                "VH_ID": 7983473,
+                                                "ROUTE_ID": 405134603,
+                                                "ROUTE_NUM": "346",
+                                                "PLATE_NO": "제주79아3473",
+                                                "CURR_STATION_ID": 405002524,
+                                                "PREDICT_TRAV_TM": 96,
+                                                "REMAIN_STATION": 77,
+                                                "CURR_STATION_NM": "영주고 입구",
+                                                "LOW_PLATE_TP": "N"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "depth": 1,
+                            "arriveTimeInStStation": [
+                                {
+                                    "ARRV_STATION_ID": 405000461,
+                                    "ROUTE_SUB_NM": "화북휴먼시아정문",
+                                    "VH_ID": 7997016,
+                                    "ROUTE_ID": 405132001,
+                                    "ROUTE_NUM": "320",
+                                    "PLATE_NO": "제주79자7016",
+                                    "CURR_STATION_ID": 405000060,
+                                    "PREDICT_TRAV_TM": 21,
+                                    "REMAIN_STATION": 15,
+                                    "CURR_STATION_NM": "일우 한란 아파트",
+                                    "LOW_PLATE_TP": "N"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "depth": 2,
+                "arriveTimeInStStation": [
+                    {
+                        "ARRV_STATION_ID": 405000516,
+                        "ROUTE_SUB_NM": "부영아파트",
+                        "VH_ID": 7997028,
+                        "ROUTE_ID": 405136002,
+                        "ROUTE_NUM": "360",
+                        "PLATE_NO": "제주79자7028",
+                        "CURR_STATION_ID": 405000189,
+                        "PREDICT_TRAV_TM": 10,
+                        "REMAIN_STATION": 5,
+                        "CURR_STATION_NM": "제원아파트",
+                        "LOW_PLATE_TP": "N"
+                    }
+                ]
+            }
+        }
+    ],
+    "endStation": [
+        {
+            "ARRV_STATION_ID": 405000207,
+            "ROUTE_SUB_NM": "영주고등학교",
+            "VH_ID": 7983474,
+            "ROUTE_ID": 405134606,
+            "ROUTE_NUM": "346",
+            "PLATE_NO": "제주79아3474",
+            "CURR_STATION_ID": 405000128,
+            "PREDICT_TRAV_TM": 7,
+            "REMAIN_STATION": 8,
+            "CURR_STATION_NM": "아라주공아파트/아라스위첸아파트",
+            "LOW_PLATE_TP": "N"
+        },
+        {
+            "ARRV_STATION_ID": 405000207,
+            "ROUTE_SUB_NM": "제주대학교",
+            "VH_ID": 7983562,
+            "ROUTE_ID": 405327001,
+            "ROUTE_NUM": "270",
+            "PLATE_NO": "제주79아3562",
+            "CURR_STATION_ID": 405001645,
+            "PREDICT_TRAV_TM": 10,
+            "REMAIN_STATION": 11,
+            "CURR_STATION_NM": "제주여자중고등학교",
+            "LOW_PLATE_TP": "N"
+        },
+        {
+            "ARRV_STATION_ID": 405000207,
+            "ROUTE_SUB_NM": "제주대학교",
+            "VH_ID": 7983448,
+            "ROUTE_ID": 405247506,
+            "ROUTE_NUM": "475",
+            "PLATE_NO": "제주79아3448",
+            "CURR_STATION_ID": 405001504,
+            "PREDICT_TRAV_TM": 18,
+            "REMAIN_STATION": 13,
+            "CURR_STATION_NM": "관음사 탐방로입구",
+            "LOW_PLATE_TP": "N"
+        },
+        {
+            "ARRV_STATION_ID": 405000207,
+            "ROUTE_SUB_NM": "제주대학교",
+            "VH_ID": 7997037,
+            "ROUTE_ID": 405135102,
+            "ROUTE_NUM": "351",
+            "PLATE_NO": "제주79자7037",
+            "CURR_STATION_ID": 405002035,
+            "PREDICT_TRAV_TM": 18,
+            "REMAIN_STATION": 15,
+            "CURR_STATION_NM": "제주시청(아라방면)",
+            "LOW_PLATE_TP": "N"
+        },
+        {
+            "ARRV_STATION_ID": 405000207,
+            "ROUTE_SUB_NM": "제주대학교",
+            "VH_ID": 7997060,
+            "ROUTE_ID": 405134202,
+            "ROUTE_NUM": "342",
+            "PLATE_NO": "제주79자7060",
+            "CURR_STATION_ID": 405000284,
+            "PREDICT_TRAV_TM": 19,
+            "REMAIN_STATION": 16,
+            "CURR_STATION_NM": "동광양",
+            "LOW_PLATE_TP": "Y"
+        },
+        {
+            "ARRV_STATION_ID": 405000207,
+            "ROUTE_SUB_NM": "제주대학교",
+            "VH_ID": 7997038,
+            "ROUTE_ID": 405135521,
+            "ROUTE_NUM": "355",
+            "PLATE_NO": "제주79자7038",
+            "CURR_STATION_ID": 405000155,
+            "PREDICT_TRAV_TM": 22,
+            "REMAIN_STATION": 19,
+            "CURR_STATION_NM": "한국병원",
+            "LOW_PLATE_TP": "N"
+        },
+        {
+            "ARRV_STATION_ID": 405000207,
+            "ROUTE_SUB_NM": "제주대학교",
+            "VH_ID": 7997041,
+            "ROUTE_ID": 405134102,
+            "ROUTE_NUM": "341",
+            "PLATE_NO": "제주79자7041",
+            "CURR_STATION_ID": 405000484,
+            "PREDICT_TRAV_TM": 31,
+            "REMAIN_STATION": 26,
+            "CURR_STATION_NM": "제주동중학교",
+            "LOW_PLATE_TP": "Y"
+        },
+        {
+            "ARRV_STATION_ID": 405000207,
+            "ROUTE_SUB_NM": "제주대학교",
+            "VH_ID": 7997121,
+            "ROUTE_ID": 405135601,
+            "ROUTE_NUM": "356",
+            "PLATE_NO": "제주79자7121",
+            "CURR_STATION_ID": 405000363,
+            "PREDICT_TRAV_TM": 34,
+            "REMAIN_STATION": 26,
+            "CURR_STATION_NM": "월랑초등학교",
+            "LOW_PLATE_TP": "N"
+        },
+        {
+            "ARRV_STATION_ID": 405000207,
+            "ROUTE_SUB_NM": "영주고등학교",
+            "VH_ID": 7983473,
+            "ROUTE_ID": 405134603,
+            "ROUTE_NUM": "346",
+            "PLATE_NO": "제주79아3473",
+            "CURR_STATION_ID": 405002524,
+            "PREDICT_TRAV_TM": 96,
+            "REMAIN_STATION": 77,
+            "CURR_STATION_NM": "영주고 입구",
+            "LOW_PLATE_TP": "N"
+        }
+    ],
+    "stationsArrivedTime": [
+        {
+            "405000459": [
+                {
+                    "ARRV_STATION_ID": 405000459,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983552,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3552",
+                    "CURR_STATION_ID": 405001696,
+                    "PREDICT_TRAV_TM": 9,
+                    "REMAIN_STATION": 5,
+                    "CURR_STATION_NM": "사라마을",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000459,
+                    "ROUTE_SUB_NM": "한라수목원",
+                    "VH_ID": 7983619,
+                    "ROUTE_ID": 405131202,
+                    "ROUTE_NUM": "312",
+                    "PLATE_NO": "제주79아3619",
+                    "CURR_STATION_ID": 405000373,
+                    "PREDICT_TRAV_TM": 10,
+                    "REMAIN_STATION": 5,
+                    "CURR_STATION_NM": "월랑마을 남녕고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000459,
+                    "ROUTE_SUB_NM": "부영아파트",
+                    "VH_ID": 7997028,
+                    "ROUTE_ID": 405136002,
+                    "ROUTE_NUM": "360",
+                    "PLATE_NO": "제주79자7028",
+                    "CURR_STATION_ID": 405000189,
+                    "PREDICT_TRAV_TM": 15,
+                    "REMAIN_STATION": 8,
+                    "CURR_STATION_NM": "제원아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000459,
+                    "ROUTE_SUB_NM": "화북휴먼시아정문",
+                    "VH_ID": 7997016,
+                    "ROUTE_ID": 405132001,
+                    "ROUTE_NUM": "320",
+                    "PLATE_NO": "제주79자7016",
+                    "CURR_STATION_ID": 405000060,
+                    "PREDICT_TRAV_TM": 20,
+                    "REMAIN_STATION": 14,
+                    "CURR_STATION_NM": "일우 한란 아파트",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000516": [
+                {
+                    "ARRV_STATION_ID": 405000516,
+                    "ROUTE_SUB_NM": "제주한라대학교(종점)",
+                    "VH_ID": 7997031,
+                    "ROUTE_ID": 405136521,
+                    "ROUTE_NUM": "365",
+                    "PLATE_NO": "제주79자7031",
+                    "CURR_STATION_ID": 405000613,
+                    "PREDICT_TRAV_TM": 2,
+                    "REMAIN_STATION": 1,
+                    "CURR_STATION_NM": "원노형마을",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000516,
+                    "ROUTE_SUB_NM": "한라수목원",
+                    "VH_ID": 7983619,
+                    "ROUTE_ID": 405131202,
+                    "ROUTE_NUM": "312",
+                    "PLATE_NO": "제주79아3619",
+                    "CURR_STATION_ID": 405000373,
+                    "PREDICT_TRAV_TM": 5,
+                    "REMAIN_STATION": 2,
+                    "CURR_STATION_NM": "월랑마을 남녕고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000516,
+                    "ROUTE_SUB_NM": "부영아파트",
+                    "VH_ID": 7997028,
+                    "ROUTE_ID": 405136002,
+                    "ROUTE_NUM": "360",
+                    "PLATE_NO": "제주79자7028",
+                    "CURR_STATION_ID": 405000189,
+                    "PREDICT_TRAV_TM": 10,
+                    "REMAIN_STATION": 5,
+                    "CURR_STATION_NM": "제원아파트",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000461": [
+                {
+                    "ARRV_STATION_ID": 405000461,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983552,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3552",
+                    "CURR_STATION_ID": 405001696,
+                    "PREDICT_TRAV_TM": 10,
+                    "REMAIN_STATION": 6,
+                    "CURR_STATION_NM": "사라마을",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000461,
+                    "ROUTE_SUB_NM": "부영아파트",
+                    "VH_ID": 7997028,
+                    "ROUTE_ID": 405136002,
+                    "ROUTE_NUM": "360",
+                    "PLATE_NO": "제주79자7028",
+                    "CURR_STATION_ID": 405000189,
+                    "PREDICT_TRAV_TM": 16,
+                    "REMAIN_STATION": 9,
+                    "CURR_STATION_NM": "제원아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000461,
+                    "ROUTE_SUB_NM": "화북휴먼시아정문",
+                    "VH_ID": 7997016,
+                    "ROUTE_ID": 405132001,
+                    "ROUTE_NUM": "320",
+                    "PLATE_NO": "제주79자7016",
+                    "CURR_STATION_ID": 405000060,
+                    "PREDICT_TRAV_TM": 21,
+                    "REMAIN_STATION": 15,
+                    "CURR_STATION_NM": "일우 한란 아파트",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000492": [
+                {
+                    "ARRV_STATION_ID": 405000492,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983552,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3552",
+                    "CURR_STATION_ID": 405001696,
+                    "PREDICT_TRAV_TM": 11,
+                    "REMAIN_STATION": 7,
+                    "CURR_STATION_NM": "사라마을",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000492,
+                    "ROUTE_SUB_NM": "한라도서관",
+                    "VH_ID": 7983429,
+                    "ROUTE_ID": 405243701,
+                    "ROUTE_NUM": "437",
+                    "PLATE_NO": "제주79아3429",
+                    "CURR_STATION_ID": 405000192,
+                    "PREDICT_TRAV_TM": 13,
+                    "REMAIN_STATION": 11,
+                    "CURR_STATION_NM": "은남동",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000495": [
+                {
+                    "ARRV_STATION_ID": 405000495,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983552,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3552",
+                    "CURR_STATION_ID": 405001696,
+                    "PREDICT_TRAV_TM": 13,
+                    "REMAIN_STATION": 8,
+                    "CURR_STATION_NM": "사라마을",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000495,
+                    "ROUTE_SUB_NM": "한라도서관",
+                    "VH_ID": 7983429,
+                    "ROUTE_ID": 405243701,
+                    "ROUTE_NUM": "437",
+                    "PLATE_NO": "제주79아3429",
+                    "CURR_STATION_ID": 405000192,
+                    "PREDICT_TRAV_TM": 15,
+                    "REMAIN_STATION": 12,
+                    "CURR_STATION_NM": "은남동",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000497": [
+                {
+                    "ARRV_STATION_ID": 405000497,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983552,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3552",
+                    "CURR_STATION_ID": 405001696,
+                    "PREDICT_TRAV_TM": 14,
+                    "REMAIN_STATION": 9,
+                    "CURR_STATION_NM": "사라마을",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000497,
+                    "ROUTE_SUB_NM": "한라도서관",
+                    "VH_ID": 7983429,
+                    "ROUTE_ID": 405243701,
+                    "ROUTE_NUM": "437",
+                    "PLATE_NO": "제주79아3429",
+                    "CURR_STATION_ID": 405000192,
+                    "PREDICT_TRAV_TM": 16,
+                    "REMAIN_STATION": 13,
+                    "CURR_STATION_NM": "은남동",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000076": [
+                {
+                    "ARRV_STATION_ID": 405000076,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 13,
+                    "REMAIN_STATION": 10,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000076,
+                    "ROUTE_SUB_NM": "한라도서관",
+                    "VH_ID": 7983429,
+                    "ROUTE_ID": 405243701,
+                    "ROUTE_NUM": "437",
+                    "PLATE_NO": "제주79아3429",
+                    "CURR_STATION_ID": 405000192,
+                    "PREDICT_TRAV_TM": 43,
+                    "REMAIN_STATION": 29,
+                    "CURR_STATION_NM": "은남동",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000163": [
+                {
+                    "ARRV_STATION_ID": 405000163,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 15,
+                    "REMAIN_STATION": 11,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000163,
+                    "ROUTE_SUB_NM": "한라도서관",
+                    "VH_ID": 7983429,
+                    "ROUTE_ID": 405243701,
+                    "ROUTE_NUM": "437",
+                    "PLATE_NO": "제주79아3429",
+                    "CURR_STATION_ID": 405000192,
+                    "PREDICT_TRAV_TM": 45,
+                    "REMAIN_STATION": 30,
+                    "CURR_STATION_NM": "은남동",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000145": [
+                {
+                    "ARRV_STATION_ID": 405000145,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 17,
+                    "REMAIN_STATION": 12,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000145,
+                    "ROUTE_SUB_NM": "한라도서관",
+                    "VH_ID": 7983429,
+                    "ROUTE_ID": 405243701,
+                    "ROUTE_NUM": "437",
+                    "PLATE_NO": "제주79아3429",
+                    "CURR_STATION_ID": 405000192,
+                    "PREDICT_TRAV_TM": 47,
+                    "REMAIN_STATION": 31,
+                    "CURR_STATION_NM": "은남동",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000462": [
+                {
+                    "ARRV_STATION_ID": 405000462,
+                    "ROUTE_SUB_NM": "제주한라대학교(종점)",
+                    "VH_ID": 7997031,
+                    "ROUTE_ID": 405136521,
+                    "ROUTE_NUM": "365",
+                    "PLATE_NO": "제주79자7031",
+                    "CURR_STATION_ID": 405000613,
+                    "PREDICT_TRAV_TM": 3,
+                    "REMAIN_STATION": 2,
+                    "CURR_STATION_NM": "원노형마을",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000462,
+                    "ROUTE_SUB_NM": "한라도서관",
+                    "VH_ID": 7983429,
+                    "ROUTE_ID": 405243701,
+                    "ROUTE_NUM": "437",
+                    "PLATE_NO": "제주79아3429",
+                    "CURR_STATION_ID": 405000192,
+                    "PREDICT_TRAV_TM": 7,
+                    "REMAIN_STATION": 6,
+                    "CURR_STATION_NM": "은남동",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000460": [
+                {
+                    "ARRV_STATION_ID": 405000460,
+                    "ROUTE_SUB_NM": "제주한라대학교(종점)",
+                    "VH_ID": 7997031,
+                    "ROUTE_ID": 405136521,
+                    "ROUTE_NUM": "365",
+                    "PLATE_NO": "제주79자7031",
+                    "CURR_STATION_ID": 405000613,
+                    "PREDICT_TRAV_TM": 4,
+                    "REMAIN_STATION": 3,
+                    "CURR_STATION_NM": "원노형마을",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000460,
+                    "ROUTE_SUB_NM": "한라도서관",
+                    "VH_ID": 7983429,
+                    "ROUTE_ID": 405243701,
+                    "ROUTE_NUM": "437",
+                    "PLATE_NO": "제주79아3429",
+                    "CURR_STATION_ID": 405000192,
+                    "PREDICT_TRAV_TM": 8,
+                    "REMAIN_STATION": 7,
+                    "CURR_STATION_NM": "은남동",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000458": [
+                {
+                    "ARRV_STATION_ID": 405000458,
+                    "ROUTE_SUB_NM": "제주한라대학교(종점)",
+                    "VH_ID": 7997031,
+                    "ROUTE_ID": 405136521,
+                    "ROUTE_NUM": "365",
+                    "PLATE_NO": "제주79자7031",
+                    "CURR_STATION_ID": 405000613,
+                    "PREDICT_TRAV_TM": 4,
+                    "REMAIN_STATION": 4,
+                    "CURR_STATION_NM": "원노형마을",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000458,
+                    "ROUTE_SUB_NM": "한라도서관",
+                    "VH_ID": 7983429,
+                    "ROUTE_ID": 405243701,
+                    "ROUTE_NUM": "437",
+                    "PLATE_NO": "제주79아3429",
+                    "CURR_STATION_ID": 405000192,
+                    "PREDICT_TRAV_TM": 9,
+                    "REMAIN_STATION": 8,
+                    "CURR_STATION_NM": "은남동",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405002045": [
+                {
+                    "ARRV_STATION_ID": 405002045,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 1,
+                    "REMAIN_STATION": 1,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405002045,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 10,
+                    "REMAIN_STATION": 5,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405002045,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 11,
+                    "REMAIN_STATION": 6,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405002045,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 13,
+                    "REMAIN_STATION": 9,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405002045,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 22,
+                    "REMAIN_STATION": 16,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405002045,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 25,
+                    "REMAIN_STATION": 16,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405002045,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983472,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3472",
+                    "CURR_STATION_ID": 405000483,
+                    "PREDICT_TRAV_TM": 45,
+                    "REMAIN_STATION": 32,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405002045,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 87,
+                    "REMAIN_STATION": 67,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000136": [
+                {
+                    "ARRV_STATION_ID": 405000136,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 2,
+                    "REMAIN_STATION": 2,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000136,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 10,
+                    "REMAIN_STATION": 6,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000136,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 12,
+                    "REMAIN_STATION": 7,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000136,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 14,
+                    "REMAIN_STATION": 10,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000136,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 23,
+                    "REMAIN_STATION": 17,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000136,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 26,
+                    "REMAIN_STATION": 17,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000136,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983472,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3472",
+                    "CURR_STATION_ID": 405000483,
+                    "PREDICT_TRAV_TM": 45,
+                    "REMAIN_STATION": 33,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000136,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 88,
+                    "REMAIN_STATION": 68,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000128": [
+                {
+                    "ARRV_STATION_ID": 405000128,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 3,
+                    "REMAIN_STATION": 3,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000128,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 11,
+                    "REMAIN_STATION": 7,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000128,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 12,
+                    "REMAIN_STATION": 8,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000128,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 14,
+                    "REMAIN_STATION": 11,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000128,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 24,
+                    "REMAIN_STATION": 18,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000128,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 27,
+                    "REMAIN_STATION": 18,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000128,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983472,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3472",
+                    "CURR_STATION_ID": 405000483,
+                    "PREDICT_TRAV_TM": 46,
+                    "REMAIN_STATION": 34,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000128,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 89,
+                    "REMAIN_STATION": 69,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000126": [
+                {
+                    "ARRV_STATION_ID": 405000126,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983474,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3474",
+                    "CURR_STATION_ID": 405000128,
+                    "PREDICT_TRAV_TM": 2,
+                    "REMAIN_STATION": 1,
+                    "CURR_STATION_NM": "아라주공아파트/아라스위첸아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000126,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 5,
+                    "REMAIN_STATION": 4,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000126,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 13,
+                    "REMAIN_STATION": 8,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000126,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 14,
+                    "REMAIN_STATION": 9,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000126,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 16,
+                    "REMAIN_STATION": 12,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000126,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 26,
+                    "REMAIN_STATION": 19,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000126,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 28,
+                    "REMAIN_STATION": 19,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000126,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 91,
+                    "REMAIN_STATION": 70,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000124": [
+                {
+                    "ARRV_STATION_ID": 405000124,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983474,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3474",
+                    "CURR_STATION_ID": 405000128,
+                    "PREDICT_TRAV_TM": 3,
+                    "REMAIN_STATION": 2,
+                    "CURR_STATION_NM": "아라주공아파트/아라스위첸아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000124,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 6,
+                    "REMAIN_STATION": 5,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000124,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 14,
+                    "REMAIN_STATION": 9,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000124,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 15,
+                    "REMAIN_STATION": 10,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000124,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 17,
+                    "REMAIN_STATION": 13,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000124,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 27,
+                    "REMAIN_STATION": 20,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000124,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 29,
+                    "REMAIN_STATION": 20,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000124,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 92,
+                    "REMAIN_STATION": 71,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000120": [
+                {
+                    "ARRV_STATION_ID": 405000120,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983474,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3474",
+                    "CURR_STATION_ID": 405000128,
+                    "PREDICT_TRAV_TM": 4,
+                    "REMAIN_STATION": 3,
+                    "CURR_STATION_NM": "아라주공아파트/아라스위첸아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000120,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 7,
+                    "REMAIN_STATION": 6,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000120,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 15,
+                    "REMAIN_STATION": 10,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000120,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 16,
+                    "REMAIN_STATION": 11,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000120,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 18,
+                    "REMAIN_STATION": 14,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000120,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 28,
+                    "REMAIN_STATION": 21,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000120,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 30,
+                    "REMAIN_STATION": 21,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000120,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 93,
+                    "REMAIN_STATION": 72,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000118": [
+                {
+                    "ARRV_STATION_ID": 405000118,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983474,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3474",
+                    "CURR_STATION_ID": 405000128,
+                    "PREDICT_TRAV_TM": 4,
+                    "REMAIN_STATION": 4,
+                    "CURR_STATION_NM": "아라주공아파트/아라스위첸아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000118,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 7,
+                    "REMAIN_STATION": 7,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000118,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 15,
+                    "REMAIN_STATION": 11,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000118,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 17,
+                    "REMAIN_STATION": 12,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000118,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 19,
+                    "REMAIN_STATION": 15,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000118,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 28,
+                    "REMAIN_STATION": 22,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000118,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 31,
+                    "REMAIN_STATION": 22,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000118,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 93,
+                    "REMAIN_STATION": 73,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000214": [
+                {
+                    "ARRV_STATION_ID": 405000214,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983474,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3474",
+                    "CURR_STATION_ID": 405000128,
+                    "PREDICT_TRAV_TM": 5,
+                    "REMAIN_STATION": 5,
+                    "CURR_STATION_NM": "아라주공아파트/아라스위첸아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000214,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 8,
+                    "REMAIN_STATION": 8,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000214,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983448,
+                    "ROUTE_ID": 405247506,
+                    "ROUTE_NUM": "475",
+                    "PLATE_NO": "제주79아3448",
+                    "CURR_STATION_ID": 405001504,
+                    "PREDICT_TRAV_TM": 16,
+                    "REMAIN_STATION": 10,
+                    "CURR_STATION_NM": "관음사 탐방로입구",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000214,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 16,
+                    "REMAIN_STATION": 12,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000214,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 17,
+                    "REMAIN_STATION": 13,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000214,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 20,
+                    "REMAIN_STATION": 16,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000214,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 29,
+                    "REMAIN_STATION": 23,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000214,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 32,
+                    "REMAIN_STATION": 23,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000214,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 94,
+                    "REMAIN_STATION": 74,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000211": [
+                {
+                    "ARRV_STATION_ID": 405000211,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983474,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3474",
+                    "CURR_STATION_ID": 405000128,
+                    "PREDICT_TRAV_TM": 5,
+                    "REMAIN_STATION": 6,
+                    "CURR_STATION_NM": "아라주공아파트/아라스위첸아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000211,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 8,
+                    "REMAIN_STATION": 9,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000211,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983448,
+                    "ROUTE_ID": 405247506,
+                    "ROUTE_NUM": "475",
+                    "PLATE_NO": "제주79아3448",
+                    "CURR_STATION_ID": 405001504,
+                    "PREDICT_TRAV_TM": 16,
+                    "REMAIN_STATION": 11,
+                    "CURR_STATION_NM": "관음사 탐방로입구",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000211,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 17,
+                    "REMAIN_STATION": 13,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000211,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 18,
+                    "REMAIN_STATION": 14,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000211,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 20,
+                    "REMAIN_STATION": 17,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000211,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 29,
+                    "REMAIN_STATION": 24,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000211,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 32,
+                    "REMAIN_STATION": 24,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000211,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 94,
+                    "REMAIN_STATION": 75,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000209": [
+                {
+                    "ARRV_STATION_ID": 405000209,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983474,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3474",
+                    "CURR_STATION_ID": 405000128,
+                    "PREDICT_TRAV_TM": 6,
+                    "REMAIN_STATION": 7,
+                    "CURR_STATION_NM": "아라주공아파트/아라스위첸아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000209,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 9,
+                    "REMAIN_STATION": 10,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000209,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983448,
+                    "ROUTE_ID": 405247506,
+                    "ROUTE_NUM": "475",
+                    "PLATE_NO": "제주79아3448",
+                    "CURR_STATION_ID": 405001504,
+                    "PREDICT_TRAV_TM": 17,
+                    "REMAIN_STATION": 12,
+                    "CURR_STATION_NM": "관음사 탐방로입구",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000209,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 17,
+                    "REMAIN_STATION": 14,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000209,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 18,
+                    "REMAIN_STATION": 15,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000209,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 21,
+                    "REMAIN_STATION": 18,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000209,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 30,
+                    "REMAIN_STATION": 25,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000209,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 33,
+                    "REMAIN_STATION": 25,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000209,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 95,
+                    "REMAIN_STATION": 76,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000267": [
+                {
+                    "ARRV_STATION_ID": 405000267,
+                    "ROUTE_SUB_NM": "화북휴먼시아정문",
+                    "VH_ID": 7997017,
+                    "ROUTE_ID": 405132001,
+                    "ROUTE_NUM": "320",
+                    "PLATE_NO": "제주79자7017",
+                    "CURR_STATION_ID": 405001669,
+                    "PREDICT_TRAV_TM": 17,
+                    "REMAIN_STATION": 12,
+                    "CURR_STATION_NM": "한라도서관입구/제주문학관",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000267,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983472,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3472",
+                    "CURR_STATION_ID": 405000483,
+                    "PREDICT_TRAV_TM": 31,
+                    "REMAIN_STATION": 24,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000267,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 75,
+                    "REMAIN_STATION": 57,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405001518": [
+                {
+                    "ARRV_STATION_ID": 405001518,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983472,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3472",
+                    "CURR_STATION_ID": 405000483,
+                    "PREDICT_TRAV_TM": 1,
+                    "REMAIN_STATION": 2,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405001518,
+                    "ROUTE_SUB_NM": "화북휴먼시아정문",
+                    "VH_ID": 7997017,
+                    "ROUTE_ID": 405132001,
+                    "ROUTE_NUM": "320",
+                    "PLATE_NO": "제주79자7017",
+                    "CURR_STATION_ID": 405001669,
+                    "PREDICT_TRAV_TM": 23,
+                    "REMAIN_STATION": 17,
+                    "CURR_STATION_NM": "한라도서관입구/제주문학관",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405001518,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 45,
+                    "REMAIN_STATION": 35,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        },
+        {
+            "405000207": [
+                {
+                    "ARRV_STATION_ID": 405000207,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983474,
+                    "ROUTE_ID": 405134606,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3474",
+                    "CURR_STATION_ID": 405000128,
+                    "PREDICT_TRAV_TM": 7,
+                    "REMAIN_STATION": 8,
+                    "CURR_STATION_NM": "아라주공아파트/아라스위첸아파트",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000207,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983562,
+                    "ROUTE_ID": 405327001,
+                    "ROUTE_NUM": "270",
+                    "PLATE_NO": "제주79아3562",
+                    "CURR_STATION_ID": 405001645,
+                    "PREDICT_TRAV_TM": 10,
+                    "REMAIN_STATION": 11,
+                    "CURR_STATION_NM": "제주여자중고등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000207,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7983448,
+                    "ROUTE_ID": 405247506,
+                    "ROUTE_NUM": "475",
+                    "PLATE_NO": "제주79아3448",
+                    "CURR_STATION_ID": 405001504,
+                    "PREDICT_TRAV_TM": 18,
+                    "REMAIN_STATION": 13,
+                    "CURR_STATION_NM": "관음사 탐방로입구",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000207,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997037,
+                    "ROUTE_ID": 405135102,
+                    "ROUTE_NUM": "351",
+                    "PLATE_NO": "제주79자7037",
+                    "CURR_STATION_ID": 405002035,
+                    "PREDICT_TRAV_TM": 18,
+                    "REMAIN_STATION": 15,
+                    "CURR_STATION_NM": "제주시청(아라방면)",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000207,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997060,
+                    "ROUTE_ID": 405134202,
+                    "ROUTE_NUM": "342",
+                    "PLATE_NO": "제주79자7060",
+                    "CURR_STATION_ID": 405000284,
+                    "PREDICT_TRAV_TM": 19,
+                    "REMAIN_STATION": 16,
+                    "CURR_STATION_NM": "동광양",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000207,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997038,
+                    "ROUTE_ID": 405135521,
+                    "ROUTE_NUM": "355",
+                    "PLATE_NO": "제주79자7038",
+                    "CURR_STATION_ID": 405000155,
+                    "PREDICT_TRAV_TM": 22,
+                    "REMAIN_STATION": 19,
+                    "CURR_STATION_NM": "한국병원",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000207,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997041,
+                    "ROUTE_ID": 405134102,
+                    "ROUTE_NUM": "341",
+                    "PLATE_NO": "제주79자7041",
+                    "CURR_STATION_ID": 405000484,
+                    "PREDICT_TRAV_TM": 31,
+                    "REMAIN_STATION": 26,
+                    "CURR_STATION_NM": "제주동중학교",
+                    "LOW_PLATE_TP": "Y"
+                },
+                {
+                    "ARRV_STATION_ID": 405000207,
+                    "ROUTE_SUB_NM": "제주대학교",
+                    "VH_ID": 7997121,
+                    "ROUTE_ID": 405135601,
+                    "ROUTE_NUM": "356",
+                    "PLATE_NO": "제주79자7121",
+                    "CURR_STATION_ID": 405000363,
+                    "PREDICT_TRAV_TM": 34,
+                    "REMAIN_STATION": 26,
+                    "CURR_STATION_NM": "월랑초등학교",
+                    "LOW_PLATE_TP": "N"
+                },
+                {
+                    "ARRV_STATION_ID": 405000207,
+                    "ROUTE_SUB_NM": "영주고등학교",
+                    "VH_ID": 7983473,
+                    "ROUTE_ID": 405134603,
+                    "ROUTE_NUM": "346",
+                    "PLATE_NO": "제주79아3473",
+                    "CURR_STATION_ID": 405002524,
+                    "PREDICT_TRAV_TM": 96,
+                    "REMAIN_STATION": 77,
+                    "CURR_STATION_NM": "영주고 입구",
+                    "LOW_PLATE_TP": "N"
+                }
+            ]
+        }
+    ]
+}

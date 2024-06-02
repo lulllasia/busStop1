@@ -4,12 +4,13 @@ import '../App.css';
 import Context from '../context/Context.js';
 import {Modal, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TEMPDATA from '../Data/TEMPDATA1.json';
+import Routes from '../Data/Routes.json';
+import NosunStop from '../Data/NosunStop.json';
 
 export default function Navbar() {
     const inputStartRef = useRef(null);
     const inputEndRef = useRef(null);
-    const { callModal, setCallModal, startingPoint, setStartingPoint, endPoint, setEndPoint } = useContext(Context);
+    const { shortest, setShortest, startingPoint, setStartingPoint, endPoint, setEndPoint } = useContext(Context);
     const [show, setShow] = useState(false);
     const [tempPoints, setTempPoints] = useState({start:'', end:''});
 
@@ -28,20 +29,20 @@ export default function Navbar() {
         if(!(tempPoints.start && tempPoints.end)){
             console.log('enter the hole inputs');
         }
-        else if(!(Object.values(TEMPDATA).filter(e => tempPoints.start === e.stationName).length && Object.values(TEMPDATA).filter(e => tempPoints.end === e.stationName).length)) {
+        else if(!(Object.values(Routes).filter(e => tempPoints.start === e.stationName).length && Object.values(Routes).filter(e => tempPoints.end === e.stationName).length)) {
             console.log("Invalid Station is included");
-            console.log("start :", Object.values(TEMPDATA).filter(e => tempPoints.start === e.stationName));
-            console.log("end :", Object.values(TEMPDATA).filter(e => tempPoints.end === e.stationName))
+            console.log("start :", Object.values(Routes).filter(e => tempPoints.start === e.stationName));
+            console.log("end :", Object.values(Routes).filter(e => tempPoints.end === e.stationName))
             inputStartRef.current.value = "";
             inputEndRef.current.value = "";
             setTempPoints(() => {return{}});
         }
         else {
-            console.log("Success", Object.values(TEMPDATA).filter(e => tempPoints.end === e.stationName));
-            console.log(Object.values(TEMPDATA).filter(e => tempPoints.start === e.stationName).length && Object.values(TEMPDATA).filter(e => tempPoints.end === e.stationName).length);
-            const temp = Object.keys(TEMPDATA).filter(e => Object.values(tempPoints).includes(TEMPDATA[e].stationName));
-            const start = temp.filter(e => TEMPDATA[e].stationName === tempPoints.start)[0];
-            const end = temp.filter(e => TEMPDATA[e].stationName === tempPoints.end)[0];
+            console.log("Success", Object.values(Routes).filter(e => tempPoints.end === e.stationName));
+            console.log(Object.values(Routes).filter(e => tempPoints.start === e.stationName).length && Object.values(Routes).filter(e => tempPoints.end === e.stationName).length);
+            const temp = Object.keys(Routes).filter(e => Object.values(tempPoints).includes(Routes[e].stationName));
+            const start = temp.filter(e => Routes[e].stationName === tempPoints.start)[0];
+            const end = temp.filter(e => Routes[e].stationName === tempPoints.end)[0];
             setStartingPoint(() => start);
             setEndPoint(() => end);
             setShow(() => false);
@@ -59,7 +60,7 @@ export default function Navbar() {
     }, [show]);
 
     useEffect(() => {
-        //console.log(tempPoints, Object.keys(TEMPDATA).filter(e => Object.values(tempPoints).includes(TEMPDATA[e].stationName)));
+        //console.log(tempPoints, Object.keys(Routes).filter(e => Object.values(tempPoints).includes(Routes[e].stationName)));
     }, [tempPoints])
 
     useEffect(() =>{
@@ -67,17 +68,60 @@ export default function Navbar() {
        return () => {document.removeEventListener('keydown', handler);};
     }, []);
 
-    return <nav className="navbar" >
+    useEffect(() => {
+        if(startingPoint == '' || endPoint == '') return;
+        console.log("1");
+        const delay = 10;
+        fetch(`http://localhost:8080/getRoutebyAPI?start=${startingPoint}&end=${endPoint}&delay=15`)
+        .then(res => res.json())
+        .then(async res => {
+            console.log(res);
+            if(res.station.length > 0) {
+                const k = res.route;
+                const p = res.station;
+                p.push(endPoint);
+
+                setShortest(() => {
+                    const temp = k.concat(p);
+                    const a = [...k];
+                    const b = [...p];
+                    const Temp = [];
+                    console.log(a,b);
+                    temp.forEach((e,i) => { 
+                        i % 2 == 0 ? Temp.push(Routes[b.splice(0, 1)[0]].stationName) : Temp.push(a.splice(0, 1)[0]);
+                    })
+                    return {Route : k, Station : p, EndTime : res.endTime, Temp : Temp};
+                });
+            } else {
+                
+            }
+        })
+        .catch(e => {
+            console.log(e);
+        })
+    }, [startingPoint, endPoint]);
+
+    return <nav className="navbar"  style={{height : shortest !== null && shortest.Station.length > 0 ? "180px" : ""}}>
         <div className="navlist" onClick={CallModal}>
             CallBack
         </div>
-        <div className="navlist">
+        {/*<div className="navlist">
             {startingPoint}
         </div>
 
         <div className="navlist">
             {endPoint}
-        </div>
+</div>*/}
+
+        {
+            shortest != null && shortest.Station.length > 0 ? 
+            <div className="navlist" id="temp">
+                <div>{shortest.Temp.join("    ->     ")}</div>
+                <div>{`예상 도착 시간 : ${shortest.EndTime}분 후`}</div>
+            </div>
+            :
+            <></>
+        }
 
         <Modal show={show} onHide={handleClose} centered>
             <Modal.Header>

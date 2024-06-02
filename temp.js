@@ -9,36 +9,47 @@ const BusStop = require('./DATA/BusStop.json');
 const TEMPDATA = require('./DATA/TEMPDATA.json');
 const TEMPDATA2 = require('./DATA/TEMPDATA2.json');
 const TEMPDATA1 = require('./DATA/TEMPDATA1.json');
+const Json = require('./temp.json');
+const Routes = require('./DATA/Routes.json');
 const { dir } = require('console');
+const { startTransition } = require('react');
 //console.log(DATA);
 
-fs.readFile(path.join(__dirname, "DATA", "temp2.csv"), "utf-8", (err, data) => {
-    const rows = data.toString().split("\n").slice(1);
-    const Data = {};
-    rows.forEach(e => {
-        const temp = e.split(/,/);
-        let k1=0, k2=0;
-        temp.forEach((e, i) => {
-            if(e[0] === "\""){
-                k1 = i;
-            }
-            else if(e[e.length-1] === "\""){
-                k2 = i;
-            }
-        })
-        const k = temp.splice(k1, k2-k1, temp.filter((e,i) => i>=k1 && i<=k2).join(",").match(/[^\"]*/g)[0]);
-        if(k.length > 0)console.log(temp);
-        Data[temp[0]] = {
-            BSname : temp[2],
-            lat : temp[4],
-            lng : temp[3],
-            around : temp[5],
+// fs.readFile(path.join(__dirname, "DATA", "temp2.csv"), "utf-8", (err, data) => {
+//     const rows = data.toString().split("\n").slice(1);
+//     const Data = {};
+//     rows.forEach(e => {
+//         const temp = e.split(/,/);
+//         //const k = temp.splice(k1, k2-k1, temp.filter((e,i) => i>=k1 && i<=k2).join(",").match(/[^\"]*/g)[0]);
+//         if(temp.length > 6){
+//             const k = (temp[1]+","+temp[2]).match(/[^"]*/g)[1].trim();
+//             console.log(k);
+//             temp.splice(1, 2, k)
+//             console.log(temp);
+//         }
+//         Data[temp[0]] = {
+//             BSname : temp[1],
+//             lat : temp[3],
+//             lng : temp[2],
+//             around : temp[4],
+//         }
+//     });
+//     fs.writeFile(path.join(__dirname,"DATA",  "BSdata3.json"), JSON.stringify(Data), err => {
+//         if(!err) console.log("SUCCESS");
+//         else console.log(err);
+//     });
+// })
+
+fs.readFile(path.join(__dirname, "DATA", "BSDATA3.json"), (err, rData) => {
+    const data = JSON.parse(rData.toString());
+    const k = {...Routes};
+    for(let i in k){
+        if(Number.isNaN(Number(k[i].lat))){
+            //console.log(data)
+            k[i].lat = data[i].lat;
         }
-    });
-    fs.writeFile(path.join(__dirname,"DATA",  "BSdata3.json"), JSON.stringify(Data), err => {
-        if(!err) console.log("SUCCESS");
-        else console.log(err);
-    });
+    }
+    fs.writeFile(path.join(__dirname, "DATA", "Routes.json"), JSON.stringify(k),ERR);
 })
 
 const ERR = err => {
@@ -196,15 +207,360 @@ else if(0){
         fs.writeFile(path.join(__dirname, "DATA", "TEMPDATA.json"), JSON.stringify(BS), ERR);
     }, 2000);
 }
-else if(1) {
+else if(0) {
     const BS = {...TEMPDATA1};
     let count = 0;
     for(let i in BS) {
         if(Number.isNaN(Number(BS[i].lat)) || Number.isNaN(Number(BS[i].lng))){
             console.log(BS[i], ++count);
-
         }
     }
+}
+else if(0) {
+   async function CommendList_by_Data(st, end, nowTime, maxDepth=2, delay=10, tfTime = 0){
+        const ret = [];
+        const date = "2024-05-19"
+
+        const findRet = (st, end, nowTime, delay, depth, ret) => {
+            Object.keys(TEMPDATA1[st].Route).filter(e => TEMPDATA1[st].Route[e].arriving[date].some(e => {
+                const k = new Date(e).getHours() * 60 + new Date(e).getMinutes();
+                const now = nowTime.getHours() * 60 + nowTime.getMinutes() + tfTime;
+                return k <= now+delay && k >= now;
+            })).forEach((e,i) => {
+                //console.log(e);
+                if(depth > 0){
+                    const push = {};push[e] = {st : st, end : end, tf : [], depth : depth};
+
+                    const st_Ord = DATA2[e].find(e => e.STATION_ID === st).STATION_ORD;
+                    //const end_Ord = DATA2[e].find(e => e.STATION_ID === end).STATION_ORD;
+                    //console.log(st_Ord, end_Ord, depth);
+                    DATA2[e].filter(e => e.STATION_ORD > st_Ord).map(e => e.STATION_ID).forEach(E => {
+                        findRet(E, end, nowTime, delay, depth-1, push[e].tf, nowTime.getHours() * 60 + nowTime.getMinutes() + tfTime + 5);
+                    });
+                    push[e].tf = push[e].tf.filter(E => Object.keys(E)[0] != e);
+                    if(push[e].tf.length > 0){
+                        ret.push(push);
+                    }
+                }
+                else {
+                    const St = DATA2[e].find(e=> e.STATION_ID===st),
+                          End = DATA2[e].find(e=> e.STATION_ID===end);
+                    //St && End && console.log("\n", i, e, "\n", St, End, St.STATION_ORD < End.STATION_ORD, "\n");
+                    if(St && End && St.STATION_ORD < End.STATION_ORD) {
+                        const push = {};
+                        push[e] = {st : st, end : end, tf : null, depth : 0};
+                        ret.push(push);
+                    }
+                }
+            });
+        }
+    
+        Array(maxDepth+1).fill(0).forEach((e,i) => {
+            findRet(st, end, nowTime, delay, i, ret, i);
+        })
+    
+
+        const getStations = e => {
+            const ret = [];
+            const func = (e, ret) => {
+                if(Object.values(e)[0].depth > 0 ){
+                    Object.values(e).forEach(e => e.tf.forEach(e => func(e, ret)));
+                }
+                ret.push(...Object.values(e).map(e => e.st));
+            }
+            e.forEach(e => func(e, ret));
+            return ret;
+        }
+
+        const getRoutes = e => {
+            const ret = [];
+            const func = (e, ret) => {
+                if(Object.values(e)[0].depth > 0 ){
+                    Object.values(e).forEach(e => e.tf.forEach(e => func(e, ret)));
+                    ret.push(...Object.keys(e));
+                }
+                ret.push(...Object.keys(e));
+            }
+            e.forEach(e => func(e, ret));
+            return ret;
+        }
+
+        const Stations = Array.from(new Set(getStations(ret))).concat([end]);
+        const Routes = Array.from(new Set(getRoutes(ret))).map(e => Number(e));
+        const stationsArrivedTime = Array(Stations.length);
+
+        for(let i = 0; i < Stations.length; i++){
+            const temp = {};
+            const k = Stations[i];
+            await fetch(`https://bus.jeju.go.kr/api/searchArrivalInfoList.do?station_id=${k}`)
+            .then(res => res.json())
+            .then(res => {
+                console.log(k, " : ", res.map(e => e.ROUTE_ID));
+                temp[k] = res.filter(e => Routes.includes(e.ROUTE_ID));
+                stationsArrivedTime[i] = temp;
+            })
+        }
+
+        // const getTimes = ret => {
+        //     ret.forEach(e => {
+        //         const key = Object.keys(e)[0];
+        //         if(e[key].depth > 0){
+        //             getTimes(e[key].tf);
+        //         }
+        //         console.log(key, typeof key);
+        //         e[key].arriveTimeInStStation = Object.values(stationsArrivedTime.find(E => Object.keys(E)[0] == e[key].st))[0].filter(E => E.ROUTE_ID == Number(key));
+        //         console.log(e[key]);
+        //     });
+        //     return ret;
+        // }
+        const getTimes = (ret, vhid = null) => {
+            ret.forEach(e => {
+                const key = Object.keys(e)[0];
+                if(e[key].depth > 0){
+                    const  k = Object.values(stationsArrivedTime.find(E => Object.keys(E)[0] == e[key].st))[0];
+                    e[key].arriveTimeInStStation = k.filter(E => 
+                        E.ROUTE_ID == Number(key) && (!vhid || E.PREDICT_TRAV_TM > k.find(E => E.VH_ID == vhid).PREDICT_TRAV_TM)).sort((a,b) => a.PREDICT_TRAV_TM - b.PREDICT_TRAV_TM);
+                    console.log("HEY", e, k, "\n\n");
+
+                    getTimes(e[key].tf, e[key].arriveTimeInStStation[0].VH_ID);
+                }
+                else {
+                    const  k = Object.values(stationsArrivedTime.find(E => Object.keys(E)[0] == e[key].st))[0];
+                    e[key].arriveTimeInStStation = k.filter(E => E.ROUTE_ID == Number(key) && (!vhid || E.PREDICT_TRAV_TM > k.find(E => E.VH_ID == vhid).PREDICT_TRAV_TM)).sort((a,b) => a.PREDICT_TRAV_TM - b.PREDICT_TRAV_TM);
+                    e[key].arrveTimeInEndStation = Object.values(stationsArrivedTime.find(e => Object.keys(e)[0] == end))[0].filter(E => E.VH_ID == e[key].arriveTimeInStStation[0].VH_ID);
+                }
+                console.log(e[key]);
+            });
+            return ret;
+        }
+        
+        getTimes(ret);
+
+        const Return = {
+            ret : ret,
+            endStation : Object.values(stationsArrivedTime.find(e => Object.keys(e)[0] == end))[0],
+            //stationsArrivedTime : stationsArrivedTime,
+        };
+
+        return Return;
+    }
+
+
+    //callback함수 재귀함수 비동기 처리 동시 고려   
+    async function CommendList_by_API(st, end, maxDepth=2, delay=5){
+        const ret = [];
+        async function findRet(st, end, delay, depth, ret, tf = false, tfTime = 0) {
+            const obj = [];
+            await fetch(`https://bus.jeju.go.kr/api/searchArrivalInfoList.do?station_id=${st}`)
+            .then(res => res.json())
+            .then(res => {
+                obj.push(...res.filter(e => tfTime < e.PREDICT_TRAV_TM && e.PREDICT_TRAV_TM < delay + tfTime ).map(e => {return{id : e.ROUTE_ID, remainTime : e.PREDICT_TRAV_TM}}));
+            })
+            .catch(err => {
+                console.log(err);
+            })
+
+            //console.log("Obj :",obj, tfTime);
+            //console.log("Depth :", depth);
+            for(let e of obj) {
+                if(depth > 0){
+                    const push = {};
+                    push[e.id] = {st : st, end : end, tf : [], depth : depth};
+                    const st_Ord = DATA2[e.id].find(e => e.STATION_ID === st).STATION_ORD;
+                    for(let E of DATA2[e.id].filter(e => e.STATION_ORD > st_Ord).map(e => e.STATION_ID)) {
+                        await findRet(E, end, delay, depth-1, push[e.id].tf, true, tfTime + e.remainTime);
+                    }
+                    push[e.id].tf = push[e.id].tf.filter(E => Object.keys(E)[0] != e.id);
+                    if(push[e.id].tf.length > 0){
+                        console.log("PUSH@ : ",push);
+                        ret.push({...push});
+                    }
+                }
+                else {
+                    const push = {},
+                        St = DATA2[e.id].find(e=> e.STATION_ID===st),
+                        End = DATA2[e.id].find(e=> e.STATION_ID===end);
+                    push[e.id] = {st : st, end : end, tf : null, depth : 0};
+                    //End && console.log("Push", End, St.STATION_ORD < End.STATION_ORD);
+                    if(St && End && St.STATION_ORD < End.STATION_ORD){
+                        console.log("Push in depth 0 :", push[e.id], tf);
+                        ret.push(push);
+                    }
+                }
+            }
+
+            return ret;
+        }
+
+        for(let i = 0; i<=maxDepth; i++){
+            await findRet(st, end, delay, i, ret);
+        }
+
+        const getStations = e => {
+            const ret = [];
+            console.log("E : ",e);
+            const func = (e, ret) => {
+                //console.log(e);
+                if(Object.values(e)[0].depth > 0 ){
+                    Object.values(e).forEach(e => e.tf.forEach(e => func(e, ret)));
+                }
+                ret.push(...Object.values(e).map(e => e.st));
+            }
+            e.forEach(e => func(e, ret));
+            return ret;
+        }
+
+        const getRoutes = e => {
+            const ret = [];
+            console.log("E : ",e);
+            const func = (e, ret) => {
+                if(Object.values(e)[0].depth > 0 ){
+                    Object.values(e).forEach(e => e.tf.forEach(e => func(e, ret)));
+                }
+                ret.push(...Object.keys(e));
+            }
+            e.forEach(e => func(e, ret));
+            return ret;
+        }
+
+
+        const Stations = Array.from(new Set(getStations(ret))).concat([end]);
+        const Routes = Array.from(new Set(getRoutes(ret))).map(e => Number(e));
+        const stationsArrivedTime = Array(Stations.length);
+
+        for(let i = 0; i < Stations.length; i++){
+            const temp = {};
+            const k = Stations[i];
+
+            await fetch(`https://bus.jeju.go.kr/api/searchArrivalInfoList.do?station_id=${k}`)
+            .then(res => res.json())
+            .then(res => {
+                console.log(k, " : ", res.map(e => e.ROUTE_ID));
+                temp[k] = res.filter(e => Routes.includes(e.ROUTE_ID));
+                stationsArrivedTime[i] = temp;
+            })
+        }
+        
+        const getTimes = (ret, vhid = null) => {
+            ret.forEach(e => {
+                const key = Object.keys(e)[0];
+                if(e[key].depth > 0){
+                    const  k = Object.values(stationsArrivedTime.find(E => Object.keys(E)[0] == e[key].st))[0];
+                    e[key].arriveTimeInStStation = k.filter(E => 
+                        E.ROUTE_ID == Number(key) && (!vhid || E.PREDICT_TRAV_TM > k.find(E => E.VH_ID == vhid).PREDICT_TRAV_TM)).sort((a,b) => a.PREDICT_TRAV_TM - b.PREDICT_TRAV_TM);
+                    console.log("HEY", e, k, "\n\n");
+
+                    getTimes(e[key].tf, e[key].arriveTimeInStStation[0].VH_ID);
+                }
+                else {
+                    const  k = Object.values(stationsArrivedTime.find(E => Object.keys(E)[0] == e[key].st))[0];
+                    e[key].arriveTimeInStStation = k.filter(E => E.ROUTE_ID == Number(key) && (!vhid || E.PREDICT_TRAV_TM > k.find(E => E.VH_ID == vhid).PREDICT_TRAV_TM)).sort((a,b) => a.PREDICT_TRAV_TM - b.PREDICT_TRAV_TM);
+                    e[key].arrveTimeInEndStation = Object.values(stationsArrivedTime.find(e => Object.keys(e)[0] == end))[0].filter(E => E.VH_ID == e[key].arriveTimeInStStation[0].VH_ID);
+                }
+                console.log(e[key]);
+            });
+            return ret;
+        }
+        
+        getTimes(ret);
+
+        const Return = {
+            ret : ret,
+            endStation : Object.values(stationsArrivedTime.find(e => Object.keys(e)[0] == end))[0],
+            stationsArrivedTime : stationsArrivedTime,
+        };
+
+        return Return;
+    }
+
+    a = () => {const temp = CommendList_by_API(405000315, 405000311, 1, 10).then(res => {
+        console.log("COMMEND :", res);
+        fs.writeFile(path.join(__dirname, "temp.json"), JSON.stringify(res), ERR);
+    })};
+    b = () => {
+        const temp = CommendList_by_Data(405000315, 405000311, new Date(), 1, 600).then( res => { 
+            console.log(res);
+            fs.writeFileSync(path.join(__dirname, "temp.json"), JSON.stringify(res));
+        });
+    };
+
+    b();
+}
+else if(1) {
+    function GetShortestRoute(Data){
+        const getShortRoute = e => {
+            const getRoute = (e) => {
+                const key = Object.keys(e)[0];
+                if(e[key].depth == 0){
+                    console.log("E :",e[key])
+                    return {endTime :  e[key].arrveTimeInEndStation.length > 0 ? e[key].arrveTimeInEndStation[0].PREDICT_TRAV_TM : 1<<15};
+                }
+                else {
+                    const ret = {};
+                    e[key].tf.forEach(e => ret[Object.keys(e)[0] + "/" + Object.values(e)[0].depth] = getRoute(e));
+                    return ret;
+                }
+            };
+            const Route = {};
+            e.forEach(e => {
+                console.log(e);
+                Route[Object.keys(e)[0]+"/"+Object.values(e)[0].depth] = getRoute(e);
+            });
+
+            console.log("ROUTE : ",Route);
+
+            const Transform = (e) => {
+                const ret = [];
+                const transform = (e, keys = [], ret) => {
+                    for(let i in e){
+                        const route_id = i.split("/")[0];
+                        const depth = i.split("/")[1];
+
+                        if(depth > 0){
+                            transform(e[i], [...keys, route_id], ret);
+                        }
+                        else {
+                            ret.push([...keys, route_id, e[i].endTime]);
+                        }
+                    }
+                }
+                transform(e, [], ret);
+                return ret.sort((a,b) => a.at(-1) - b.at(-1));
+            }
+
+            const TransRoute = Transform(Route);
+            console.log("Trans :", TransRoute);
+            const Shortest = TransRoute[0];
+            
+            let p = e.find(e => Object.values(e)[0].depth == Shortest.length - 2 && Object.keys(e)[0] == Shortest[0]);
+
+            const ret = [];
+            const func = (p) => {
+                if(!p) return;
+                const depth = Object.values(p)[0].depth;
+                if(depth > 0){
+                    console.log(p, depth);
+                    ret.push(Object.values(p)[0].st);
+                    console.log("POP :", Object.values(p)[0].tf.find(e => Object.keys(e)[0] == Shortest[Shortest.length - 1 - depth]));
+                    func(Object.values(p)[0].tf.find(e => Object.keys(e)[0] == Shortest[Shortest.length - 1 - depth]))
+                }
+                else {
+                    ret.push(Object.values(p)[0].st, Shortest.at(-1))
+                }
+            }
+            func(p);
+            console.log("P :", p);
+            console.log("RET :", ret);
+            
+            return {route : Shortest, station : ret};
+        }
+
+        const Route = getShortRoute(Data);
+
+        return Route;
+    }
+
+    console.log(GetShortestRoute(Json.ret));
 }
 else {
     const BS = {...TEMPDATA};
@@ -224,5 +580,3 @@ else {
 }
 console.log(Object.keys(BSDATA2).length);
 console.log(Object.keys(DATA2).length);
-//console.log(Object.keys(DATA).map(e => DATA[e].ROUTE_ID).sort().at(-1));
-//console.log(new Set(Object.keys(DATA).map(e => DATA[e].ROUTE_ID)));
